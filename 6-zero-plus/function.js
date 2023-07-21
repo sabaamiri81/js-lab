@@ -1,10 +1,7 @@
 
 
-function zero(a){
-
-    if(a != 0){
-        return Number(prompet("Enter another number"));
-    } else {
-        return alert="welcome";
-    }
+function zero(a) {
+    do {
+        Number(prompt(" It is unacceptable \n enter another number"));
+    } while (a != 0);
 }
