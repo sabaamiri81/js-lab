@@ -1,8 +1,6 @@
 
 
-let fahrenheit = prompt("Enter degree in Fahrenheit");
-let celsius = (fahrenheit - 32) / 1.8;
+let fahrenheit = Number(prompt("Enter degree in Fahrenheit"));
 
-if (fahrenheit) {
-    console.log(celsius);
-}
+let celsius = degree(fahrenheit);
+alert(celsius + " " + "celsius");
