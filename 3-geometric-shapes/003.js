@@ -1,16 +1,7 @@
 
 
-let length = prompt("Enter the length");
-let width = prompt("Enter the width");
-let environment = 2 * length + 2 * width;
-// let environment = 2*(length+width);
-let area = length * width;
+let length = Number(prompt("Enter the length"));
+let width = Number(prompt("Enter the width"));
 
-if (length == width) {
-    console.log(area);
-}
-
-if (length > width || length < width) {
-    console.log(environment);
-}
-
+let math = geometricShapes(width, length);
+alert(math);
