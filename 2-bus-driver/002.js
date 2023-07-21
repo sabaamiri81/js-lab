@@ -1,18 +1,8 @@
 
 
-let cap = prompt('Enter the capacity');
-let on = prompt('Enter the number of passengers');
-let wait = prompt('Enter the number of people waiting');
-let d = cap - on - wait;
+let cap = Number(prompt('Enter the capacity'));
+let on = Number(prompt('Enter the number of passengers'));
+let wait = Number(prompt('Enter the number of people waiting'));
 
-if (d < 0) {
-    console.log("Bus is full and" + " " + -d + " " + "people waiting");
-}
-
-if (d == 0) {
-    console.log('Bus is full and no waiting');
-}
-
-if (d > 0) {
-    console.log(d + " " + "empty seats");
-}
+let answer = busCapacity(cap, on, wait);
+alert(answer);
