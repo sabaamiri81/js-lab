@@ -1,4 +1,3 @@
-
-
-let a= Number(prompt("Enter a number"));
-let notZero= zero(a);
+let num=Number(prompt("enter a number"));
+let answer= zero(num);
+alert(answer)
