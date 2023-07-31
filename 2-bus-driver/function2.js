@@ -15,3 +15,14 @@ function busCapacity(cap, on, wait) {
         return (d + " " + "empty seats");
     }
 }
+
+
+// OR
+
+// function howManySeat(cap, on, wait) {
+//     if (cap - (on + wait) > 0)
+//         return "there are free seats"
+
+//     else
+//         return wait - (cap - on) + "are waiting"
+// }
