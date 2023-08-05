@@ -24,3 +24,16 @@ function small() {
     }
     return pass3
 }
+
+
+function total() {
+
+    let password = "";
+    for (i = 0; i < 3; i++) {
+
+        password += Math.floor(Math.random() * 10) + (String.fromCharCode(Math.floor(Math.random() * 26 + 65))) + (String.fromCharCode(Math.floor(Math.random() * 26 + 97)))
+    }
+
+    return password
+
+}
