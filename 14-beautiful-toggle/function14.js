@@ -6,9 +6,6 @@ function makeMeHappy() {
     let left= document.getElementById("smile__eye--left")
     let mouth= document.getElementById("smile__mouth")
     
-
-
-
     if (flag === true) {
         btn.style.color = "black"
         btn.style.backgroundColor = "red"

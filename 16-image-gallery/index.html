@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS</title>
+    <script src="function16.js" defer></script>
+    <style>
+        .main {
+            height: 500px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main__img {
+            width: 600px;
+            height: 400px;
+        }
+
+        .cards{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .cards__first--one,.cards__second--two,.cards__third--three,.cards__fourth--four,.cards__fifth--five
+        {
+            width: 200px;
+            min-height: 150px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <img src="./images/car1.webp" alt="car photo" id="main__img">
+        <h1 id="main__p">X</h1>
+    </div>
+
+
+    <div class="cards">
+        <button id="cards__first" onclick="first()">
+            <img src="./images/car1.webp" alt="car photo" class="cards__first--one">
+        </button>
+        <button id="cards__second" onclick="second()">
+            <img src="./images/car2.webp" alt="car photo" class="cards__second--two">
+        </button>
+        <button id="cards__third" onclick="third()">
+            <img src="./images/car3.webp" alt="car photo" class="cards__third--three">
+        </button>
+        <button id="cards__fourth" onclick="fourth()">
+            <img src="./images/car4.webp" alt="car photo" class="cards__fourth--four">
+        </button>
+        <button id="cards__fifth" onclick="fifth()">
+            <img src="./images/car5.jpg" alt="car photo" class="cards__fifth--five">
+        </button>
+
+    </div>
+
+</body>
+
+</html>
