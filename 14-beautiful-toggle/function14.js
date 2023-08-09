@@ -12,8 +12,9 @@ function makeMeHappy() {
         btn.textContent = "BE SAD"
 
         smile.style.backgroundColor= "greenyellow"
-        // smile.style.position= "absolute"
-        // smile.style.right= "15%"
+        smile.style.position= "absolute"
+        smile.style.right= "15%"
+        smile.style.left= "auto"
 
         right.style.backgroundColor="green"
         left.style.backgroundColor="green"
@@ -31,8 +32,10 @@ function makeMeHappy() {
         btn.textContent = "BE HAPPY"
 
         smile.style.backgroundColor= "red"
-        // smile.style.position= "absolute"
-        // smile.style.left= "15%"
+        smile.style.position= "absolute"
+        smile.style.left= "15%"
+        smile.style.right= "auto"
+
 
         right.style.backgroundColor="black"
         left.style.backgroundColor="black"
