@@ -1,7 +1,6 @@
 // DOM NODES
 
 let thumbs = document.querySelectorAll(".box");
-console.log(thumbs);
 
 // FUNCTIONS
 
@@ -10,13 +9,13 @@ function random(a, b) {
 }
 
 function colorfulBox() {
-     this.style.backgroundColor = "rgb(" + random(0, 255) + "," + random(0, 255) + "," + random(0, 255) + ")"
+    this.style.backgroundColor = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`
 }
 
 // events
 
 for (let index = 0; index < thumbs.length; index++) {
-    thumbs[index].onclick =  colorfulBox;
+    thumbs[index].onclick = colorfulBox;
 
 }
 
