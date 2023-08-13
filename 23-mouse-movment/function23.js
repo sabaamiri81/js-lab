@@ -30,11 +30,16 @@ function toggle() {
 
 function trackCircle(event) {
     console.log(event)
-    let x = event.clientX /2
-    let y = event.clientY /2
+    let x = event.screenX /2
+    let y = event.screenY /2
+
+    let a = event.movementX /2
+    let b = event.movementY /2
 
 
     // template string
+   
+    circle.style.transform = `translate(${a}px,${b}px)`;
     circle.style.transform = `translate(${x}px,${y}px)`;
 }
 
