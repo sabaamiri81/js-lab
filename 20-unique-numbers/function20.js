@@ -24,6 +24,13 @@ let numbers = [1, 1, 4, 3, 5, 4, 6, 9, 9]
 
 function uniqueNumbers(numbers) {
     let uniques=[];
+
+    // for(let i=0; i<numbers.length; i++) {
+    //     if(numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])){
+    //         uniques.push(numbers[i])
+    //     }
+    // }
+
     for (const number of numbers) {
         if(numbers.indexOf(number)===numbers.lastIndexOf(number)){
             uniques.push(number)
