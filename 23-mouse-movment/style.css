@@ -1,0 +1,22 @@
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color:rgb(15, 35, 102);
+}
+
+.btn{
+    padding: 15px;
+    margin: 10px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+#circle {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(white,rgb(183, 178, 178), rgb(214, 207, 207),rgb(234, 229, 213), rgb(202, 185, 185),rgb(201, 189, 189)) ;
+    box-shadow: 20px 20px 70px rgb(255, 255, 255);
+    border-radius: 50%;
+}
