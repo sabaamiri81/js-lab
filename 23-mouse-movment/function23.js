@@ -47,4 +47,4 @@ function trackCircle(event) {
 
 
 window.addEventListener("mousemove", trackCircle);
-btn.addEventListener("click", toggle);
+btn.addEventListener("mouseenter", toggle);
