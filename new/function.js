@@ -143,6 +143,58 @@
 
 
 
-function mergeArrays(arr1, arr2) {
-  return  arr1.concat(arr2)
-}
+// function flip(arr) {
+//   let sum = arr.join("")
+//   let each = ""
+//   for(let i = 0 ; i< sum.length; i++){
+//       each += sum[i] + ","
+//   }
+//   let newArr = Math.min(each);
+  // let min = 0
+
+  // for (let i = 0; i < arr.length - 1; i++) {
+  //   let sum = arr[i];
+  //   for (let j = 1; j < arr.length; j++) {
+  //     if (arr[j] > sum) {
+  //       sum = arr[j]
+  //     }
+
+  //     if (arr[j] < sum) {
+  //       min = arr[j]
+  //     }
+  //   }
+  //   if (dir === "R") {
+  //     newArr.unshift(sum)
+  //     newArr.splice(0,0,min)
+  //   }
+  //   if (dir === "L") {
+  //     newArr.push(sum)
+  //     newArr.splice(arr.length-1,0,min)
+  //   }
+
+
+  // }
+
+//   return newArr
+// };
+
+
+
+// function maps(x){
+//   let newArray = []
+//   for(let i = 0 ; i < x.length ; i++){
+//     newArray.push(x[i]*2)
+//   }
+  
+//   return newArray
+
+// }
+
+
+// function grow(x){
+//   let sum = 1;
+//   for(let i = 0 ; i< x.length ; i++ ){
+//     sum*= x[i]
+//   }
+// return sum
+// }
