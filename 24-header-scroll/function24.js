@@ -6,9 +6,9 @@ function scrollHeader() {
         header.classList.remove("change");
     } else {
         header.classList.add("change");
-        header.style.transition= "3s";
+        header.style = " transition : 3s "
     }
     oldScroll = window.scrollY
 }
 
-window.addEventListener("scroll",scrollHeader );
+window.addEventListener("scroll", scrollHeader);

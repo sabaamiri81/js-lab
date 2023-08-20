@@ -16,5 +16,4 @@ header{
 header.change{
     position: sticky;
     top: 0;
-    transition: 5s;
 }
