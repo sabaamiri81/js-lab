@@ -31,14 +31,14 @@ function trackCircle(event) {
     let x = event.screenX / 2
     let y = event.screenY / 2
 
-    let a = event.movementX / 2
-    let b = event.movementY / 2
+    // let a = event.movementX / 2
+    // let b = event.movementY / 2
 
 
     // template string
 
-    circle.style.transform = `translate(${a}px,${b}px)`;
-    circle.style.transform = `translate(${x}px,${y}px)`;
+    circle.style.transform = `translate(${(innerWidth - x)/8}px,${(innerHeight-y)/8}px)`;
+    // circle.style.transform = `translate(${x}px,${y}px)`;
 }
 
 
