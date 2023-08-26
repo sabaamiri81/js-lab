@@ -1,0 +1,25 @@
+body {
+    background-image: linear-gradient(pink, rgb(153, 221, 236));
+    height: 100vh;
+    color: white;
+    margin: 0;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    box-shadow: 20px 30px 35px rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.black {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    transition: 2s;
+}
+.title{
+  display: none;
+}
