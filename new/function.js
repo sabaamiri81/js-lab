@@ -343,27 +343,31 @@
 //     return newArr
 // }
 
-function barista(coffees) {
-    if(coffees.length === 0){
-        return  0
-    }
-    let newArr = coffees.sort((a, b) => a - b);
 
-    let waiting = [newArr[0]];
-    let sum = [waiting[0]];
-    let total = 0;
 
-    for (let i = 1; i < newArr.length; i++) {
-        waiting.push(2 + newArr[i]);
-    };
+// success******************
+// function barista(coffees) {
+//     if(coffees.length === 0){
+//         return  0
+//     }
+//     let newArr = coffees.sort((a, b) => a - b);
 
-    for (let j = 1; j < waiting.length; j++) {
-        sum.push(waiting[j] + sum[j - 1]);
-    };
+//     let waiting = [newArr[0]];
+//     let sum = [waiting[0]];
+//     let total = 0;
 
-    for (let k = 0; k < sum.length; k++) {
-        total += sum[k];
-    };
+//     for (let i = 1; i < newArr.length; i++) {
+//         waiting.push(2 + newArr[i]);
+//         sum.push(waiting[i] + sum[i - 1]);
+//     };
 
-    return total
-}
+//     for (let k = 0; k < sum.length; k++) {
+//         total += sum[k];
+//     };
+
+//     return total
+// }
+
+
+
+
