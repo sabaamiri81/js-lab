@@ -3,13 +3,15 @@ let lastName = document.querySelector(".lastName");
 let nationalCode = document.querySelector(".nationalCode");
 let phoneNumber = document.querySelector(".phoneNumber");
 
-let counter = 0
+let counter = 0 
 console.log(counter);
+
 
 nam.addEventListener("keyup", () => {
     if (nam.value.match(/^[a-z]{2,}$/)) {
         nam.style.border = "5px solid green";
         counter++;
+        console.log(counter)
     }
     else {
         nam.style.border = "5px solid red"
@@ -45,5 +47,3 @@ phoneNumber.addEventListener("keyup", () => {
         phoneNumber.style.border = "5px solid red"
     }
 })
-
-
