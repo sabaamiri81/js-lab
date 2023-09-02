@@ -148,28 +148,62 @@ const BOOKS = [
     }
 ]
 
+const FAVORITE =[]
+
 
 // dom nodes
 let library = document.querySelector(".library")
+let fav = document.querySelector(".header__heartIcon")
+
+
+
+
+
+
+// functions
+
+function favData(evt) {
+    let findData = BOOKS.filter(item => item === BOOKS.id)
+    FAVORITE.push(findData)
+    console.log(FAVORITE);
+
+}
+
+
+    function favRender() {
+
+        let favTemplate = FAVORITE.map((FAVORITE, index) => {
+           
+        })
+        library.innerHTML = favTemplate
+    }
+
 
 
 
 function addProduct(event) {
     let template = BOOKS.map((BOOKS, index) => {
-        return `  <div class="library__product">
+        return `<div class="library__product">
         <img class="library__product--img" src="./image/${BOOKS.imgSrc}" alt="book picture">
-        <div class="library__product--shadow">
-            <h1 class="library__product--shadow--title">نام اثر : ${BOOKS.title}</h1>
-        <h2 class="library__product--shadow--author">خالق اثر : ${BOOKS.author}</h2>
-        <h3 class="library__product--shadow--date">زمان انتشار : سال ${BOOKS.published_date}</h3>
-        <h4 class="library__product--shadow--lang">زبان : ${BOOKS.language} </h4>
-        <h4 class="library__product--shadow--genre">ژانر : ${BOOKS.genre}</h4>
-        </div>
-    </div>`
+<div class="library__product--shadow">
+  <h1 class="library__product--shadow--title">نام اثر : ${BOOKS.title}</h1>
+  <h2 class="library__product--shadow--author">خالق اثر : ${BOOKS.author}</h2>
+  <h3 class="library__product--shadow--date">زمان انتشار : سال ${BOOKS.published_date}</h3>
+  <h4 class="library__product--shadow--lang">زبان : ${BOOKS.language} </h4>
+  <h4 class="library__product--shadow--genre">ژانر : ${BOOKS.genre}</h4>
+</div>
+<button class="library__btn"  onclick="addData()">افزودن به علاقه مندی ها</button>
+      </div>
+      
+
+                `
     })
     library.innerHTML = template
 }
 
 
+
+
 // event listener
 window.addEventListener("load", addProduct);
+fav.addEventListener("click", favRender)
