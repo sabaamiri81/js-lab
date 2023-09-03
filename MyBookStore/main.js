@@ -162,18 +162,26 @@ let fav = document.querySelector(".header__heartIcon")
 
 // functions
 
-function favData(evt) {
-    let findData = BOOKS.filter(item => item === BOOKS.id)
-    FAVORITE.push(findData)
-    console.log(FAVORITE);
-
+function favData(bookId) {
+    let findData = BOOKS.find(item => item.id === bookId)
+    FAVORITE.push(findData);
 }
 
 
     function favRender() {
 
-        let favTemplate = FAVORITE.map((FAVORITE, index) => {
-           
+        let favTemplate = FAVORITE.map((favoriteBook, index) => {
+           return ` <div class="favBook">
+           <div class="favBook__data">
+           <h2 class="favBook__data--title">نام اثر : ${favoriteBook.title}</h2>
+           <h3 class="favBook__data--author">خالق اثر : ${favoriteBook.author}</h3>
+           <h4 class="favBook__data--date">زمان انتشار : سال ${favoriteBook.published_date}</h4>
+           <h5 class="favBook__data--lang">زبان : ${favoriteBook.language} </h5>
+           <h5 class="favBook__data--genre">ژانر : ${favoriteBook.genre}</h5>
+       </div>
+           <img class="favBook__img" src="./image/${favoriteBook.imgSrc}" alt="book picture">
+          
+          </div>`
         })
         library.innerHTML = favTemplate
     }
@@ -182,21 +190,18 @@ function favData(evt) {
 
 
 function addProduct(event) {
-    let template = BOOKS.map((BOOKS, index) => {
+    let template = BOOKS.map((book, index) => {
         return `<div class="library__product">
-        <img class="library__product--img" src="./image/${BOOKS.imgSrc}" alt="book picture">
+        <img class="library__product--img" src="./image/${book.imgSrc}" alt="book picture">
 <div class="library__product--shadow">
-  <h1 class="library__product--shadow--title">نام اثر : ${BOOKS.title}</h1>
-  <h2 class="library__product--shadow--author">خالق اثر : ${BOOKS.author}</h2>
-  <h3 class="library__product--shadow--date">زمان انتشار : سال ${BOOKS.published_date}</h3>
-  <h4 class="library__product--shadow--lang">زبان : ${BOOKS.language} </h4>
-  <h4 class="library__product--shadow--genre">ژانر : ${BOOKS.genre}</h4>
+  <h1 class="library__product--shadow--title">نام اثر : ${book.title}</h1>
+  <h2 class="library__product--shadow--author">خالق اثر : ${book.author}</h2>
+  <h3 class="library__product--shadow--date">زمان انتشار : سال ${book.published_date}</h3>
+  <h4 class="library__product--shadow--lang">زبان : ${book.language} </h4>
+  <h4 class="library__product--shadow--genre">ژانر : ${book.genre}</h4>
 </div>
-<button class="library__btn"  onclick="addData()">افزودن به علاقه مندی ها</button>
-      </div>
-      
-
-                `
+<button class="library__btn"  onclick="favData(${book.id})">افزودن به علاقه مندی ها</button>
+      </div>`
     })
     library.innerHTML = template
 }
