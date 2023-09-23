@@ -1,0 +1,280 @@
+body {
+  margin: 0%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #e9eaee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  height: 90px;
+  background-color: #1c2031;
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.header__search {
+  background-color: transparent;
+  border-bottom: 2px solid #e9eaee;
+  height: 40px;
+  width: 300px;
+  margin-left: 700px;
+  padding-top: 10px;
+}
+.header__search--input {
+  width: 85%;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+  color: white;
+}
+.header__search--input::-webkit-input-placeholder {
+  color: #e9eaee;
+  font-size: large;
+}
+.header__search--input::-moz-placeholder {
+  color: #e9eaee;
+  font-size: large;
+}
+.header__search--input:-ms-input-placeholder {
+  color: #e9eaee;
+  font-size: large;
+}
+.header__search--input::-ms-input-placeholder {
+  color: #e9eaee;
+  font-size: large;
+}
+.header__search--input::placeholder {
+  color: #e9eaee;
+  font-size: large;
+}
+.header__search--icon {
+  color: #e9eaee;
+  font-size: x-large;
+}
+.header__heartIcon {
+  color: red;
+  font-size: xx-large;
+  margin-left: 200px;
+}
+.header__shoppingIcon {
+  color: #e9eaee;
+  font-size: xx-large;
+  margin-left: 20px;
+}
+.header__shoppingIcon--number {
+  width: 15px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #a8db34;
+  color: white;
+  position: absolute;
+  right: 175px;
+  top: 50px;
+  padding-left: 8px;
+}
+.header__userIcon {
+  color: #e9eaee;
+  font-size: xx-large;
+  margin-left: 30px;
+}
+.header__homeIcon {
+  color: #e9eaee;
+  font-size: xx-large;
+  margin-left: 30px;
+  margin-right: 60px;
+}
+.header__barsIcon {
+  color: #e9eaee;
+  font-size: xx-large;
+  margin-left: 50px;
+}
+
+.nav {
+  position: absolute;
+  background-color: #cae784;
+  border-radius: 30px;
+  width: 250px;
+  height: 370px;
+  top: 65px;
+  left: 35px;
+  display: none;
+}
+
+.navItem {
+  color: #1c2031;
+  font-style: italic;
+  padding: 0 20px 10px 20px;
+  cursor: pointer;
+}
+
+.navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 20;
+}
+
+.mainSection {
+  margin: auto;
+  width: 95%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+}
+.mainSection__card {
+  width: 300px;
+  height: 570px;
+  background-color: white;
+  -webkit-box-shadow: 15px 15px 15px rgb(198, 198, 198);
+          box-shadow: 15px 15px 15px rgb(198, 198, 198);
+  border-radius: 25px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 20px;
+}
+.mainSection__card--btn {
+  border: none;
+  background-color: #cae784;
+  width: 180px;
+  height: 40px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+}
+.mainSection__card--img {
+  width: 90%;
+  height: 350px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.mainSection__card--title {
+  width: 250px;
+  margin-top: 20px;
+}
+.mainSection__card--price {
+  font-weight: 900;
+  margin-top: 20px;
+  margin-left: -150px;
+  color: red;
+}
+
+.singleSection {
+  margin: 0px auto;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.singleSection__card {
+  width: 100%;
+  height: 570px;
+  background-color: white;
+  -webkit-box-shadow: 15px 15px 15px rgb(198, 198, 198);
+          box-shadow: 15px 15px 15px rgb(198, 198, 198);
+  border-radius: 25px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+}
+.singleSection__card--btn {
+  border: none;
+  background-color: #cae784;
+  width: 180px;
+  height: 40px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+  position: absolute;
+  left: 80px;
+  bottom: 60px;
+}
+.singleSection__card--img {
+  width: 400;
+  height: 350px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  right: 80px;
+  top: 250px;
+}
+.singleSection__card--title {
+  position: absolute;
+  left: 100px;
+  top: 180px;
+}
+.singleSection__card--description {
+  height: 200px;
+  width: 500px;
+  overflow-y: scroll;
+  line-height: 30px;
+  margin-left: -760px;
+}
+.singleSection__card--price {
+  font-weight: 900;
+  color: red;
+  position: absolute;
+  left: 90px;
+  bottom: 115px;
+}/*# sourceMappingURL=style.css.map */
